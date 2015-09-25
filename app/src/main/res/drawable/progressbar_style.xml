@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--进度条背景颜色-->
+    <item android:id="@android:id/background">
+
+        <shape>
+            <!--颜色渐变间隔大小-->
+            <corners android:radius="5dip" />
+
+            <gradient
+                android:angle="0"
+                android:centerColor="#ffffffff"
+                android:centerY="0.75"
+                android:endColor="@color/progress_back"
+                android:startColor="@color/progress_back" />
+        </shape>
+    </item>
+    <!--进度条前景颜色-->
+    <item android:id="@android:id/progress">
+
+        <clip>
+
+            <shape>
+                <!--颜色渐变间隔大小-->
+                <corners android:radius="5dip" />
+
+                <gradient
+                    android:angle="0"
+                    android:endColor="@color/progress_color_end"
+                    android:startColor="@color/progress_color_start" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
